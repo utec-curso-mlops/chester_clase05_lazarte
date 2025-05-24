@@ -1,0 +1,5 @@
+model_parameters,model_rank,auc_score_mean,auc_score_std,auc_score_cv
+"{'max_depth': 4, 'min_impurity_decrease': 0, 'min_samples_leaf': 100, 'n_estimators': 50}",4,0.7236251283103334,0.006682437296414743,0.00923466728141165
+"{'max_depth': 4, 'min_impurity_decrease': 0, 'min_samples_leaf': 100, 'n_estimators': 100}",3,0.7243377928085851,0.005991100672729789,0.008271141906733297
+"{'max_depth': 6, 'min_impurity_decrease': 0, 'min_samples_leaf': 100, 'n_estimators': 50}",2,0.7292248202336299,0.007005271636844484,0.009606463524650912
+"{'max_depth': 6, 'min_impurity_decrease': 0, 'min_samples_leaf': 100, 'n_estimators': 100}",1,0.7319565685553313,0.005837259063824427,0.007974870797792652

@@ -25,6 +25,8 @@ jobs:
         run: python src/2-prepare-dataset-test.py
       - name: Train Evaluate Model
         run: python src/3-train-evaluate-models.py
+      - name: Select Best Model
+        run: python src/4-select-best-model.py
       - name: Upload Artifact
         uses: actions/upload-artifact@v4
         with:
@@ -38,6 +40,16 @@ jobs:
   model-deployment:
     needs: model-build
     runs-on: ubuntu-latest
-    steps:
+    steps: 
+      - name: Download Artifacts
+        uses: actions/download-artifact@v4
+        with:
+          name: best-model-files
+      - name: Output Artifact Content
+        run: |
+          ls
+          echo "preprocess folder context"
+          cd preprocess
+          ls
       - name: Deploy Model
         run: echo "Deploy Model to AWS"

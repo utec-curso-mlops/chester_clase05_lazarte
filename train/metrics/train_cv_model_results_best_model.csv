@@ -1,0 +1,2 @@
+model_parameters,model_rank,auc_score_mean,auc_score_std,auc_score_cv
+"{'max_depth': 6, 'min_impurity_decrease': 0, 'min_samples_leaf': 100, 'n_estimators': 100}",1,0.7319565685553313,0.005837259063824427,0.007974870797792652
